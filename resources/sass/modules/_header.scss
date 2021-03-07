@@ -1,0 +1,15 @@
+.navbar {
+    > .container {
+        padding: 1rem 0;
+
+        .navbar-brand {
+            margin-left: 0;
+
+            .logo {
+                svg {
+                    height: 3rem;
+                }
+            }
+        }
+    }
+}
