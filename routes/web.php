@@ -16,4 +16,8 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Index');
-});
+})->name('index');
+
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->name('dashboard')->middleware('auth');

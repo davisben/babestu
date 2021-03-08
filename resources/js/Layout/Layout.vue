@@ -2,6 +2,11 @@
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="container is-max-widescreen">
             <div class="navbar-brand"><Logo /></div>
+            <div>
+                <form @submit.prevent="$inertia.post(route('logout'))">
+                    <button>Log Out</button>
+                </form>
+            </div>
         </div>
     </nav>
 
@@ -18,5 +23,10 @@ export default {
     components: {
         Logo,
     },
+    methods: {
+        logout() {
+            //this.;
+        }
+    }
 }
 </script>

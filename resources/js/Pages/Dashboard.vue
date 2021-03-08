@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <p>Index</p>
+        <p>Dashboard</p>
     </Layout>
 </template>
 
@@ -8,7 +8,7 @@
 import Layout from '@/Layout/Layout'
 
 export default {
-    inheritAttrs: false,
+    name: 'Dashboard',
     components: {
         Layout,
     },

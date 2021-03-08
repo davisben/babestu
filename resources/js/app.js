@@ -2,8 +2,6 @@ import { createApp, h } from 'vue'
 import { App, plugin } from '@inertiajs/inertia-vue3'
 import { InertiaProgress } from '@inertiajs/progress'
 
-InertiaProgress.init()
-
 const el = document.getElementById('app')
 
 createApp({
@@ -12,5 +10,8 @@ createApp({
     resolveComponent: name => require(`./Pages/${name}`).default,
   })
 })
+  .mixin({ methods: { route } })
   .use(plugin)
   .mount(el)
+
+InertiaProgress.init()

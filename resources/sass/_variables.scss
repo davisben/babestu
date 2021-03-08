@@ -1,1 +1,11 @@
-$primary: #f76800;
+// Color overrides.
+$accent: #f76800;
+$primary: #009989;
+$link: $primary;
+
+$custom-colors: (
+    'accent': ($accent, $white),
+    'success': (#f3faef, #325e1c),
+    'warning': (#fdf8ed, #734c00),
+    'danger': (#fcf4f2, #a51b00),
+);
