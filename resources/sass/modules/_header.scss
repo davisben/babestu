@@ -2,12 +2,34 @@
     > .container {
         padding: 1rem 0;
 
-        .navbar-brand {
-            margin-left: 0;
+        .page-title {
+            font-size: 2rem;
+        }
 
-            .logo {
-                svg {
-                    height: 3rem;
+        .navbar-dropdown {
+            min-width: 175px;
+        }
+    }
+}
+
+.menu {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    box-shadow: 5px 0px 10px -5px $grey-light;
+    text-align: center;
+    z-index: 99;
+
+    .logo {
+        padding: 2rem;
+    }
+
+    .menu-list {
+        li {
+            a {
+                &:hover {
+                    background: none;
+                    color: $primary;
                 }
             }
         }

@@ -1,6 +1,10 @@
 <template>
     <Layout>
-        <p>Index</p>
+        <template v-slot:title>Index</template>
+
+        <template v-slot:content>
+            <p>Index</p>
+        </template>
     </Layout>
 </template>
 

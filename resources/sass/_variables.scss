@@ -9,3 +9,8 @@ $custom-colors: (
     'warning': (#fdf8ed, #734c00),
     'danger': (#fcf4f2, #a51b00),
 );
+
+$navbar-background-color: none;
+$navbar-dropdown-item-hover-color: $primary;
+$navbar-dropdown-border-top: 0;
+$navbar-dropdown-radius: 3px;

@@ -20,7 +20,7 @@ const config = require('./webpack.config');
         },
         sourceMap: true
     })
-    .sourceMaps()
+    .sourceMaps(true, 'inline-source-map')
     .vue()
     .version()
     .webpackConfig(config);

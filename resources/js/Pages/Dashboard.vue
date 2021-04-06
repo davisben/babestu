@@ -1,6 +1,10 @@
 <template>
     <Layout>
-        <p>Dashboard</p>
+        <template v-slot:title>Dashboard</template>
+
+        <template v-slot:content>
+            <p>Dashboard</p>
+        </template>
     </Layout>
 </template>
 
